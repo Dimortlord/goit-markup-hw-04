@@ -253,6 +253,7 @@ img {
     font-size: 16px;
     line-height: 1.87;
     border-radius: 4px;
+    border: 0px;
 }
 
 .button-hero {
@@ -295,13 +296,25 @@ text-transform: uppercase;
 /*-------------------------------Icons for feautures------------------------*/
 
 .box-item {
+    display: flex;
     background-color: #F5F4FA;
     margin-bottom: 30px;
-}
-.icon-box {
-    margin: 25px 100px 25px 100px;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.section-feature-list {
+    display: flex;
+    
+}
+
+.icon-box {
+    display: flex;
+    
+}
 /*-------------------------------END------------------------*/
 
 
@@ -457,61 +470,9 @@ text-transform: uppercase;
     text-align: center;
     }
     
-/*-------------------------------Clients--------------------------------*/
-
-.clients-list{
-    display: inline-flex;
-}
-.clients-list {
-   
-
-    margin-right: 30px;
-}
-
-.clients-item {
-    display: flex;
-    justify-content: center;
-   
-}
-
-
-.clients {
-    padding: 94px;
-}
-
-.clients-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.clients-list-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #ffffff;
-        width: 170px;
-        height: 92px;
-        border: 1px solid #afb1b8;
-        border-radius: 4px;
-}
-
-.clients-list-link:hover {
-    border-color: var(--accent-color);
-}
-
-.icon-clients {
-    fill: #AFB1B8;
-}
-
-.clients-list-link:hover .icon-clients,
-.clients-list-link:focus .icon-clients {
-    fill: var(--accent-color);
-}
-
-
-
-
-
+    .box-list:last-child{
+        margin-right: 0px;
+    }
 
 /*-------------------------------Icons for team------------------------*/
 
@@ -550,8 +511,74 @@ text-transform: uppercase;
 
 .icon-link:hover .icon-team,
 .icon-link:focus .icon-team {
-    fill: var(--fourth-backgroung-color);
+    fill: var(--primary-backgroung-color);
 }
+
+
+
+
+/*-------------------------------Clients--------------------------------*/
+
+.clients-list{
+    display: inline-flex;
+}
+.clients-list {
+
+    margin-right: 30px;
+}
+
+.clients-list:last-child {
+    margin-right: 0px;
+}
+
+.clients-item {
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+    align-content: center;
+}
+
+.clients-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+}
+
+.clients-list-link:hover {
+    border-color: var(--accent-color);
+}
+
+.icon-clients {
+    fill: #AFB1B8;
+}
+
+.clients-list-link:hover .icon-clients,
+.clients-list-link:focus .icon-clients {
+    fill: var(--accent-color);
+}
+
+
+
+
+
 
 
 
@@ -613,6 +640,10 @@ background-color:  #2196f3;
 .social-network-item {
     display: flex;
     margin-right: 10px;
+}
+
+.social-network-item:last-child{
+    margin-right: 0px;
 }
 
 .logo-white {
@@ -728,7 +759,7 @@ padding-bottom: 60px;
 
 padding: 6px 22px 6px 22px;
 font-family: inherit;
-color: var(--title-text-color);
+color: #212121;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
